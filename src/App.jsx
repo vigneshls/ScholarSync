@@ -46,22 +46,9 @@ import {
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import { format } from 'date-fns'
-const INITIAL_FACULTIES = [
-    { id: 'f1', name: 'Dr. Sarah Connor', role: 'Professor', dept: 'CSE' },
-    { id: 'f2', name: 'Dr. Alan Turing', role: 'Assoc. Prof', dept: 'AI-DS' },
-    { id: 'f3', name: 'Prof. Grace Hopper', role: 'Professor', dept: 'IT' },
-    { id: 'f4', name: 'Dr. John von Neumann', role: 'Asst. Prof', dept: 'CSE' },
-    { id: 'f5', name: 'Prof. Ada Lovelace', role: 'Assoc. Prof', dept: 'AI-DS' },
-    { id: 'f6', name: 'Admin User', role: 'System Admin', dept: 'SYS-ADMIN' },
-]
+const INITIAL_FACULTIES = [];
 
-const INITIAL_TASKS = [
-    { id: 't1', facultyId: 'f1', title: 'Syllabus Revamp', deadline: '2026-03-15', status: 'progress' },
-    { id: 't2', facultyId: 'f2', title: 'Model Training Lab Setup', deadline: '2026-03-01', status: 'done' },
-    { id: 't3', facultyId: 'f3', title: 'Network Security Audit', deadline: '2026-03-20', status: 'progress' },
-    { id: 't4', facultyId: 'f4', title: 'Mid-term Paper Setting', deadline: '2026-03-10', status: 'todo' },
-    { id: 't5', facultyId: 'f5', title: 'Research Grant Proposal', deadline: '2026-04-05', status: 'progress' },
-]
+const INITIAL_TASKS = [];
 
 const CustomStatusSelect = ({ status, onChange }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -140,9 +127,9 @@ export default function App() {
     const [studentData, setStudentData] = useState(() => {
         const saved = localStorage.getItem('studentData');
         return saved ? JSON.parse(saved) : [
-            { dept: 'CSE', y1: 60, y2: 58, y3: 49, y4: 63, boys: 130, girls: 100 },
-            { dept: 'AI-DS', y1: 58, y2: 49, y3: 27, y4: 20, boys: 80, girls: 74 },
-            { dept: 'IT', y1: 60, y2: 43, y3: 27, y4: 25, boys: 90, girls: 65 },
+            { dept: 'CSE', y1: 0, y2: 0, y3: 0, y4: 0, boys: 0, girls: 0 },
+            { dept: 'AI-DS', y1: 0, y2: 0, y3: 0, y4: 0, boys: 0, girls: 0 },
+            { dept: 'IT', y1: 0, y2: 0, y3: 0, y4: 0, boys: 0, girls: 0 },
             { dept: 'SYS-ADMIN', y1: 0, y2: 0, y3: 0, y4: 0, boys: 0, girls: 0 }
         ];
     });
