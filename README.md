@@ -49,11 +49,7 @@ ScholarSync features a suite of high-fidelity themes to match your work style:
    ```
 
 ### 📦 Build & Installer
-To generate a standalone Windows installer:
-```bash
-npm run electron:build
-```
-The installer will be generated in the `dist_electron/` directory.
+The standalone production installer for ScholarSync is protected. To obtain the official `.exe` for your institution, please contact the repository owner directly.
 
 ---
 
