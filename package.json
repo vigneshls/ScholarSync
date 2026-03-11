@@ -1,5 +1,5 @@
 {
-  "name": "faculty-dashboard",
+  "name": "scholarsync",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,7 @@
   "main": "electron.cjs",
   "build": {
     "appId": "com.faculty.dashboard",
-    "productName": "Faculty Dashboard",
+    "productName": "ScholarSync",
     "mac": {
       "category": "public.app-category.education"
     },

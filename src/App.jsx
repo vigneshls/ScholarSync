@@ -147,7 +147,7 @@ export default function App() {
         ];
     });
 
-    const [dashboardTitle, setDashboardTitle] = useState(() => localStorage.getItem('dashboardTitle') || "Faculty of CSE");
+    const [dashboardTitle, setDashboardTitle] = useState(() => localStorage.getItem('dashboardTitle') || "ScholarSync Command Center");
     const [hodName, setHodName] = useState(() => localStorage.getItem('hodName') || "Dean of Faculty");
     const [hodCSE, setHodCSE] = useState(() => localStorage.getItem('hodCSE') || "HoD - CSE");
     const [hodAIDS, setHodAIDS] = useState(() => localStorage.getItem('hodAIDS') || "HoD - AI & DS");
